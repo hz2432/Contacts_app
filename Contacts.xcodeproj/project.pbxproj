@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A2249CB61EA90CF10060A786 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2249CB51EA90CF10060A786 /* ListTableViewController.swift */; };
 		A2249CB81EA90D0C0060A786 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2249CB71EA90D0C0060A786 /* DetailViewController.swift */; };
+		A2249CBA1EA938FF0060A786 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2249CB91EA938FF0060A786 /* Person.swift */; };
 		A28481E71EA81BB0007672B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28481E61EA81BB0007672B6 /* AppDelegate.swift */; };
 		A28481EC1EA81BB1007672B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A28481EA1EA81BB1007672B6 /* Main.storyboard */; };
 		A28481EE1EA81BB1007672B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A28481ED1EA81BB1007672B6 /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* Begin PBXFileReference section */
 		A2249CB51EA90CF10060A786 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		A2249CB71EA90D0C0060A786 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A2249CB91EA938FF0060A786 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		A28481E31EA81BB0007672B6 /* Contacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Contacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28481E61EA81BB0007672B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A28481EB1EA81BB1007672B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				A2249CB51EA90CF10060A786 /* ListTableViewController.swift */,
 				A28481E61EA81BB0007672B6 /* AppDelegate.swift */,
 				A28481EA1EA81BB1007672B6 /* Main.storyboard */,
+				A2249CB91EA938FF0060A786 /* Person.swift */,
 				A28481ED1EA81BB1007672B6 /* Assets.xcassets */,
 				A28481EF1EA81BB1007672B6 /* LaunchScreen.storyboard */,
 				A28481F21EA81BB1007672B6 /* Info.plist */,
@@ -141,6 +144,7 @@
 			files = (
 				A2249CB81EA90D0C0060A786 /* DetailViewController.swift in Sources */,
 				A28481E71EA81BB0007672B6 /* AppDelegate.swift in Sources */,
+				A2249CBA1EA938FF0060A786 /* Person.swift in Sources */,
 				A2249CB61EA90CF10060A786 /* ListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

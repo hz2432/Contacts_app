@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="vhu-7y-Jf5" detailTextLabel="hdj-dl-oZ9" style="IBUITableViewCellStyleSubtitle" id="dFP-Hl-Os3">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="cellId" textLabel="vhu-7y-Jf5" detailTextLabel="hdj-dl-oZ9" style="IBUITableViewCellStyleSubtitle" id="dFP-Hl-Os3">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dFP-Hl-Os3" id="5et-04-5bu">
@@ -49,7 +49,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Lists" id="lEG-E3-TIW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Gdv-sA-zOO"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Gdv-sA-zOO">
+                            <connections>
+                                <action selector="newPerson:" destination="kJT-Qd-R26" id="37p-TT-8wP"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <segue destination="Nrz-Nu-SpV" kind="show" identifier="list2detail" id="pO0-s9-H2N"/>
@@ -142,8 +146,17 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Details" id="TGb-ts-Ngd">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="sA1-Xh-QVf"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="sA1-Xh-QVf">
+                            <connections>
+                                <action selector="savePerson:" destination="Nrz-Nu-SpV" id="JvH-7z-H1f"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameText" destination="v1L-NK-sEK" id="SVP-6j-zx1"/>
+                        <outlet property="phoneText" destination="kEg-BR-soP" id="p5f-jw-gad"/>
+                        <outlet property="titleText" destination="Jpi-Ve-wwW" id="HT0-fA-HWQ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3nj-rd-nmc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
